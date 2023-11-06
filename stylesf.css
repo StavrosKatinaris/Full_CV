@@ -1,0 +1,67 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 21cm; /* A4 paper width */
+    height: 29.7cm; /* A4 paper height */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Sections */
+.section {
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Add animations for sections */
+.section.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Links */
+a {
+    color: #0070c9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0050a7;
+}
+
+/* Contact section */
+#contact {
+    background: #f8f8f8;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+        max-width: none; /* Allow content to extend beyond A4 paper width on smaller screens */
+    }
+}
